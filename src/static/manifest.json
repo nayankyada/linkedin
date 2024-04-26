@@ -1,6 +1,6 @@
 {
-  "name": "React Chrome Extension",
-  "description": "React Chrome Extension",
+  "name": "Linkedin",
+  "description": "Linkedin",
   "version": "1.0.0",
   "manifest_version": 3,
   "icons": {
@@ -10,7 +10,7 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "React Chrome Extension",
+    "default_title": "Linkedin",
     "default_icon": "icon.png"
   },
   "permissions": [
@@ -23,7 +23,7 @@
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
+        "https://www.linkedin.com/in/*"
       ],
       "js": [
         "contentScript.js"
