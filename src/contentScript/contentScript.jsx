@@ -21,19 +21,19 @@ const App = () => {
         document.querySelector('button[aria-label="Add a note"]')?.click();
         setTimeout(() => {
           let textarea = document.querySelector("#custom-message");
-          textarea.value = `Hello, it's a pleasure to meet you!\n\nI wanted to get in touch with you in case there was a chance later. I am a senior frontend developer with over 5 years of experience.\n\nExpertise in JavaScript, TypeScript, NextJS, ReactJS, and Node.js.\n\nBest regards,\nKyada Nayan`;
+          textarea.value = `Hello, it's a pleasure to meet you!\n\nI wanted to get in touch with you in case there was a chance later. I am a senior frontend developer with over 5 years of experience.\n\nExpertise in JavaScript, TypeScript, NextJS, ReactJS, and Sanity.io.\n\nBest regards,\nKyada Nayan`;
           textarea.dispatchEvent(new Event("input", { bubbles: true }));
           setTimeout(() => {
-            document.querySelector('button[aria-label="Send invitation"]')?.click();
+            document
+              .querySelector('button[aria-label="Send invitation"]')
+              ?.click();
           }, 500);
         }, 500);
       }, 500);
     }
   };
 
-  const follow = () => {
-
-  }
+  const follow = () => {};
 
   return (
     <div className="container">

@@ -29,6 +29,15 @@
         "contentScript.js"
       ],
       "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://www.upwork.com/*"
+      ],
+      "js": [
+        "upworkContentScript.js"
+      ],
+      "run_at": "document_idle"
     }
   ]
 }
